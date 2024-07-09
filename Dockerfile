@@ -20,4 +20,4 @@ COPY . .
 EXPOSE 8080
 
 # Run app.py when the container launches
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "app.run:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "main:app"]
