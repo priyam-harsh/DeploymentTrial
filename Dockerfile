@@ -7,6 +7,10 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY . /app
 
+COPY selfsigned.pem /app/
+COPY selfsigned.key /app/
+
+
 # Copy the requirements file into the container at /usr/src/app/
 COPY requirements.txt ./
 
